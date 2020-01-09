@@ -1,0 +1,5 @@
+<% @airlines.each do |airline| %>
+  <section id = "airline-<%=airline.id%>">
+    <%= link_to airline.name, "/airlines/#{airline.id}" %>
+  </section>
+<% end %>
