@@ -5,6 +5,6 @@
 <section id = "flights">
   <h2>Flights</h2>
   <% @passenger.flights.each do |flight| %>
-    <%= link_to flight.number, "/flights/#{flight.id}" %>
+    <%= link_to flight.number, "/flights/#{flight.id}" %><br>
   <% end %>
 </section>

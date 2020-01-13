@@ -36,7 +36,6 @@ RSpec.describe "flight show page" do
     FlightPassenger.create(flight: flight_1, passenger: passenger_2)
     FlightPassenger.create(flight: flight_1, passenger: passenger_3)
     visit "/flights/#{flight_1.id}"
-    save_and_open_page
     within "#passenger_statistics" do
       expect(page).to have_content("Adults: 2")
       expect(page).to have_content("Minors: 1")

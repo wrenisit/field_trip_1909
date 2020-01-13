@@ -8,12 +8,13 @@
     <p>Airline: <%= @flight.airline.name %></p>
 
     <section id="passenger_manifest">
+      <<h2>Passenger Manifest</h2>
       <% @flight.passengers.each do |passenger| %>
-        <%= passenger.name %>
+        <%= passenger.name %><br>
       <% end %>
     </section>
     <section id="passenger_statistics">
-      <h3>Passenger Statistics</h3>
+      <h2>Passenger Statistics</h2>
       <h4>Adults: <%= @flight.passenger_count %></h4>
       <h4>Minors: <%= @flight.passenger_count(false) %></h4>
     </section>
