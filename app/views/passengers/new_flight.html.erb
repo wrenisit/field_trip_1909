@@ -1,0 +1,6 @@
+<%= form_tag "/passengers/#{@passenger.id}/new" do %>
+  <%= label_tag :flight %>
+  <%= text_field_tag :flight %>
+
+  <%= submit_tag 'Submit' %>
+<% end %>

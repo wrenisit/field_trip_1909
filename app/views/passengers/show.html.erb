@@ -1,4 +1,6 @@
 <h1>Name: <%= @passenger.name %></h1>
+<%= button_to "Assign To A Flight", "/passengers/#{@passenger.id}/new", method: :get %>
+
 
 <section id = "flights">
   <h2>Flights</h2>
